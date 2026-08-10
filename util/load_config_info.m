@@ -39,6 +39,6 @@ out_cfg.peak_lags = 7:9;
 out_cfg.perm_thresh_lag = 95;
 out_cfg.lag_smooth = 2; % neighbor averaging
 
-out_cfg.crosval_wind = 1:150; % 300 msec window for cross-validating based on liu2019
+out_cfg.crosval_wind = 1:151; % 300 msec window for cross-validating based on liu2019
 
 end
