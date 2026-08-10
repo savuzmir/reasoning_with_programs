@@ -3,7 +3,7 @@ function out = plot_object_object_results()
 % load prelims
 
 out_cfg = load_config_info();
-out_all_object = load('objecte_fig_results.mat');
+out_all_object = load('...\data\object_fig_results.mat');
 
 %% prepare data
 

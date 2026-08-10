@@ -2,8 +2,7 @@ function results = plot_behaviour_results()
 
 % load prelims 
 out_cfg = load_config_info();
-
-behavioural_out = load(behavioural_data);
+behavioural_out = load('...\data\behaviour_results.mat');
 
 % stats 
 

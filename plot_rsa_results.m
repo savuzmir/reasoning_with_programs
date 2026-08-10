@@ -4,7 +4,7 @@ function results = plot_rsa_results()
 
 out_cfg = load_config_info();
 
-rsa_struct = load(rsa_file);
+rsa_struct = load('...\data\rsa_results.mat');
 
 %======================================================
 %% main 

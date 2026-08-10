@@ -1,9 +1,8 @@
 function out = plot_object_role_results()
 
 % load prelims and data 
-
 out_cfg = load_config_info();
-out_op_results = load('out_op_results.mat');
+out_op_results = load('...\data\operation_fig_results.mat');
 
 %% beh corr plots
 
@@ -45,7 +44,7 @@ rt_resp_att  = out_op_results.rt_att_decod_resp;
 rt_on_tp     = out_op_results.rt_type_decod_mn;
 rt_on_att    = out_op_results.rt_att_decod_mn;
 
-[crosval_pred_tp_resp, tp_x]    = compute_crosval_acc(rt_resp_tp (out_cfg.crosval_wind, :)-1/2);
+[crosval_pred_tp_resp, tp_x]    = compute_crosval_acc(rt_resp_tp (out_cfg.crosval_wind, :));
 [crosval_pred_att_resp, at_x] = compute_crosval_acc(rt_resp_att (out_cfg.crosval_wind, :));
 
 [crosval_pred_tp_mn, tp_x]    = compute_crosval_acc(rt_on_tp(out_cfg.crosval_wind, :));

@@ -1,10 +1,9 @@
 function out = plot_computation_results()
 
 out = struct;
+out_computation_results = load('...\data\computation_fig_results.mat');
 
-
-out_computation_results = load('out_computation_results');
-
+%%
 % =================================
 % attr decoding
 
